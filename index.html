@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+    ></script>
+</head>
+<body>
+
+<header>
+    <h1>Weather Dashboard</h1>
+</header>
+
+<main class="main-container">
+    <section class="form">
+        <form>
+            <p>Search for a City:</p>
+            <input type="text" id="city-name" placeholder="City Name">
+            <button id="btn-search"><i class="fas fa-search"></i></button>
+            <p id="alert"></p>
+            <div id="history">
+              <ul id="history-list">
+
+              </ul>
+            </div>
+        </form>
+    </section>
+    
+    <section class="weather-container">
+        <section id="current-weather">
+            <h2 id="intro">Please enter a city in the "Search for a City" area field to view the current weather conditions for that city, and the forecast for the next 5 days.</h2>
+            <h2><span id="city-location"></span><span id="date"></span></h2>
+            <p> <span class="hide" id="weather-icon"></span></p>
+            <p class="hide"><span id="temp"></span><span>&#176C</span></p>
+            <p class="hide"><span id="humidity"></span><span></span></p>
+            <p class="hide"><span id="wind"></span><span></span></p>
+                <p class="hide uv-index"></p>
+                <p class="uv-color" id="uv-index"></p>
+            
+        </section>
+
+        <section class="five-day-weather hide">
+            <h2>5-Day Forecast:</h2>
+            <section id="fiveDay-forecast">
+                <div class="five-day" id="day-one">
+                    <h2><span id="date-one"></span></h2>
+                    <p> <span id="weather-icon1"></span></p>
+                    <p class=""><span id="temp-one"></span><span id="deg"></span></p>
+                    <p class=""><span id="humidity-one"></span><span></span></p>
+                </div>
+                <div class="five-day" id="day-two">
+                    <h2><span id="date-two"></span></h2>
+                    <p> <span id="weather-icon2"></span></p>
+                    <p class=""><span id="temp-two"></span><span>&#176C</span></p>
+                    <p class="hide"><span id="humidity-two"></span><span></span></p>
+                </div>
+                <div class="five-day" id="day-three">
+                    <h2><span id="date-three"></span></h2>
+                    <p> <span id="weather-icon3"></span></p>
+                    <p class="hide"><span id="temp-three"></span><span>&#176C</span></p>
+                    <p class="hide"><span id="humidity-three"></span><span></span></p>
+                </div>
+                <div class="five-day" id="day-four">
+                    <h2><span id="date-four"></span></h2>
+                    <p> <span id="weather-icon4"></span></p>
+                    <p class="hide"><span id="temp-four"></span><span>&#176C</span></p>
+                    <p class="hide"><span id="humidity-four"></span><span></span></p>
+                </div>
+                <div class="five-day" id="day-five">
+                    <h2><span id="date-five"></span></h2>
+                    <p> <span id="weather-icon5"></span></p>
+                    <p class="hide"><span id="temp-five"></span><span>&#176C</span></p>
+                    <p class="hide"><span id="humidity-five"></span><span></span></p>
+                </div>
+            </section>
+        </section>
+    </section>
+
+</main>
+
+  <script src="./assets/app.js"></script>  
+</body>
+</html>
