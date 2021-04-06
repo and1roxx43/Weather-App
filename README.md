@@ -36,11 +36,11 @@ ____
 ### URL:
 ____
 Github
-- 
+- https://github.com/and1roxx43/Weather-App
 
 ___
 
 Webpage URL
-- 
+- https://and1roxx43.github.io/Weather-App/
 
 

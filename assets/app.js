@@ -113,7 +113,7 @@ function getUVIndex(){
     const apiKey = 'b353740f1229bf52f7b41e34ebefa1c3';
 
 
-    fetch(`http://api.weatherstack.com/current?access_key=9594be539e8683b5b06a2ffa39d390ef&query=${cityNameEl.value}`)
+    fetch(`https://api.weatherstack.com/current?access_key=9594be539e8683b5b06a2ffa39d390ef&query=${cityNameEl.value}`)
     .then(function (response){
         // console.log(res);
         if (response.status !== 200){
